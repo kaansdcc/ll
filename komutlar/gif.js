@@ -19,6 +19,8 @@ exports.run = async (client, message, args) => {
 :white_small_square: | **d+türk:** = Bot türk gif atar.
 :white_small_square: | **d+alkış** = Bot alkış gifi atar 
 :white_small_square: | **d+inek** = Bot inek gifi atar
+:white_small_square: | **d+itfaiye** = Bot itfaiye gifi atar
+:white_small_square: | **d+kedi** = Bot kedi gifi atar
 `)
 
 
