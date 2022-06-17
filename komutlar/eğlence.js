@@ -9,7 +9,7 @@ const eğlence = new Discord.MessageEmbed()
 .setAuthor("jarvis v12 sürümüyle yeniden sizlerle.")
 .setTitle(" Eğlence Komutları ")
  .setTimestamp()
-.setDescription(" **d+tersyazı** = Bir Yazıyı Bot Ters Yazar. \n **d+zar-at** = Bot Zar Atar  \n  **d+mcskin** = Yazdığınız ismin minecraft görünüşünü atar.  \n  **d+fbi** = Bot FBi Gif Atar.  \n  **d+token** = Tokenimi Öğrenmek İstemezmisin?  \n  **d+düello** = Düello Atarsın.  \n  **d+wasted** = Polis tarafından yakalanırsın.  \n  **d+atatürk** = Dene ve gör... (1881-1938) \n **d+lafat** = Bot Laf Atar. \n **d+a101** = a101 komutudur \n **d+aşkölçer** = Aşk Ölçmeni sağlar. ")
+.setDescription(" **d+tersyazı** = Bir Yazıyı Bot Ters Yazar. \n **d+zar-at** = Bot Zar Atar \n **d+mcskin** = Yazdığınız ismin minecraft görünüşünü atar.  \n  **d+fbi** = Bot FBi Gif Atar.  \n  **d+token** = Tokenimi Öğrenmek İstemezmisin?  \n  **d+düello** = Düello Atarsın.  \n  **d+wasted** = Polis tarafından yakalanırsın.  \n  **d+atatürk** = Dene ve gör... (1881-1938) \n **d+lafat** = Bot Laf Atar. \n **d+a101** = a101 komutudur \n **d+aşkölçer** = Aşk Ölçmeni sağlar \n **d+çıkma-teklifi-et** = Çıkma Teklifi Edersin.")
 
  .setImage("https://cdn.discordapp.com/attachments/947400801553354752/954697612995481610/game-of-thrones-white-walker.gif")
 message.channel.send(eğlence)
