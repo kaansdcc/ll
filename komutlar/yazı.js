@@ -1,23 +1,37 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const client = new Discord.Client();
 
-exports.run = async (client, message, args) => {
+exports.run = (client, message, args) => {
 
-message.channel.send('Bekle..').then(a => {
-var para = ['Yazı','Tura'];
+message.channel.send("Balık Tuttun Balığı Çekiyorsun..").then(message => {
 
-setTimeout(() => {
-a.edit(`*Para atıldı. Çıkan sonuç:* **${Math.floor(Math.random()*para.length)} **`)
-}, 1000);
-});
-
+    var motion = [
+      "``Sazan Tuttun!`` :fish:",
+      "``Köpek Balığı Tuttun İyi Para Eder Sat Sat`` :D",
+      "``Uskumru Tuttun!`` :fish:",
+      "``Mezgit Tuttun! Havyarıda Var Hee`` :) :fish:",
+      "``Japon Balığı Tuttun Yemeyi Düşünmüyorsun Herhalde?``",
+      "``Hamsi Tuttun!`` :fish:",
+      "``Levrek Tuttun!`` :fish:",
+      "``Hiçbirşey Tutamadın Maalesef!`` :wastebasket:",
+      "``Alabalık Tuttun!`` :fish:",
+      "``Maalesef Balık Oltadan Kaçtı!`` :wastebasket:",
+      "``İstavrit Tuttun!`` :fish:"
+    ];
+    var motion = motion[Math.floor(Math.random() * motion.length)];
+    message.edit(`${motion}`);
+  });
 };
+
 exports.conf = {
   enabled: true,
-  guildOnly: true,
-  aliases: [],
-  permLevel: 0,
-}
+  guildOnly: false,
+  aliases: ["balık", "balıktut"],
+  permLevel: 0
+};
 
 exports.help = {
-  name: 'yazı-tura'
+  name: "balık-tut",
+  description: "Balık Tutarsın.",
+  usage: "balıktut"
 };
