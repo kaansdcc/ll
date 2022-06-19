@@ -25,5 +25,5 @@ exports.conf = {
 exports.help = {
     name: 'korkunç',
     description: 'Yazdığınız yazıyı Korkunça çevirir.',
-    usage: 'Korkunç <yazı>'
+    usage: 'korkunç <yazı>'
 }
