@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
   .setDescription(`
 
 
-
+:white_small_square: | **d+uçak:** = Bot uçak gifi atar
 :white_small_square: | **d+animal:** = Bot hayvan gif atar.
 :white_small_square: | **d+anime:** = Bot anime  gif atar.
 :white_small_square: | **d+baby:** = Bot bebek gif atar.
