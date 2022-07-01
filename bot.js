@@ -11,9 +11,7 @@ app.get('/', (req, res) => res.send("Bot Aktif"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
 /////////////////
 //////////////////kaannındır
-client.on("ready", () => {
-client.channels.cache.get('988860721704083516').join();
-});
+
 
 client.on("message", message => {
   let client = message.client;
