@@ -6,13 +6,6 @@ const moment = require("moment");
 const ayarlar=require("./ayarlar.json");
 const express = require('express');
 /////
-const { Client, MessageEmbed  } = require("discord.js"),//yDarKDayS
-      {     prefix, token     } = require("./ayarlar"),
-      {          Aki          } = require("aki-api"),
-      emojis = ["👍", "👎", "❔", "🤔", "🙄", "❌"],
-      Started = new Set();
-
-
 const app = express()
 app.get('/', (req, res) => res.send("Bot Aktif"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
@@ -227,6 +220,4 @@ client.on("message", async msg => {
  
     });
 
-
-
-}}).login(process.env.TOKEN);
+client.login(process.env.token)
