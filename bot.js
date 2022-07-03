@@ -3,9 +3,8 @@ const Discord=require("discord.js");
 const client=new Discord.Client();
 const db = require('quick.db')
 const moment = require("moment");
-const ayarlar=require("./ayarlar.json")
-const app = express();
-const http = require("http");
+ar=require("./ayarlar.json");
+const express = require('express');
 /////
 const { Client, MessageEmbed  } = require("discord.js"),//yDarKDayS
       {     prefix, token     } = require("./ayarlar "),
