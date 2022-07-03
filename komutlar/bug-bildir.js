@@ -9,7 +9,7 @@ const embed = new Discord.MessageEmbed()
 .setTitle("Bug Sistemi")
 .setColor('BLUE')
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
-client.channels.cache.get('954072495563100231').send(embed)
+client.channels.cache.get('993175296012468241').send(embed)
   
 message.channel.send("Bug bildiriminiz gönderildi. :white_check_mark:").then(message => message.delete({ timeout: 5000 }));
 };
