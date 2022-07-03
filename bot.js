@@ -232,6 +232,4 @@ client.on("message", async msg => {
 
 
 
-
-
-}}).login(process.env.TOKEN);
+client.login(process.env.token)
