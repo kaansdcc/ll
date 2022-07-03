@@ -6,6 +6,16 @@ const moment = require("moment");
 const ayarlar=require("./ayarlar.json");
 const express = require('express');
 /////
+const {     prefix, token     } = require("./ayarlar"),//Altyapı yDarKDayS a Aittir !!! https://www.youtube.com/c/yDarKDayS
+      Root = require("eris"),
+      client = new Root(token),
+
+      {          Aki          } = require("aki-api"),
+      emojis = ["👍", "👎", "❔", "🤔", "🙄", "❌"],
+      Started = new Set(),
+      createReactionCollector = require("./helpers/Collectors/ReactionCollector.js");
+
+
 const app = express()
 app.get('/', (req, res) => res.send("Bot Aktif"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
