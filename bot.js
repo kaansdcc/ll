@@ -3,17 +3,15 @@ const Discord=require("discord.js");
 const client=new Discord.Client();
 const db = require('quick.db')
 const moment = require("moment");
-const ayarlar=require("./ayarlar.json");
-const express = require('express');
+const ayarlar=require("./ayarlar.json")
+const app = express();
+const http = require("http");
 /////
-const {     prefix, token     } = require("./ayarlar"),//Altyapı yDarKDayS a Aittir !!! https://www.youtube.com/c/yDarKDayS
-      Root = require("eris"),
-      client = new Root(token),
-
+const { Client, MessageEmbed  } = require("discord.js"),//yDarKDayS
+      {     prefix, token     } = require("./ayarlar "),
       {          Aki          } = require("aki-api"),
       emojis = ["👍", "👎", "❔", "🤔", "🙄", "❌"],
-      Started = new Set(),
-      createReactionCollector = require("./helpers/Collectors/ReactionCollector.js");
+      Started = new Set();
 
 
 const app = express()
@@ -229,5 +227,11 @@ client.on("message", async msg => {
     if (!i) return;
  
     });
+
+
+
+
+
+
 
 client.login(process.env.token)
