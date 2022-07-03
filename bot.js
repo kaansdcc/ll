@@ -5,13 +5,7 @@ const db = require('quick.db')
 const moment = require("moment");
 const ayarlar=require("./ayarlar.json")
 const express = require("express");
-const http = require("http");
 /////
-const { Client, MessageEmbed  } = require("discord.js"),//yDarKDayS
-      {     prefix, token     } = require("./ayarlar"),
-      {          Aki          } = require("aki-api"),
-      emojis = ["👍", "👎", "❔", "🤔", "🙄", "❌"],
-      Started = new Set();
 
 
 
@@ -228,6 +222,9 @@ client.on("message", async msg => {
     if (!i) return;
  
     });
+
+
+
 
 
 
