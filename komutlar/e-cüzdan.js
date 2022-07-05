@@ -2,7 +2,7 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 var ayarlar = require("../ayarlar.json");
-const Canvas = require('canvas.js')
+const Canvas = require('canvas')
     , Image = Canvas.Image
     , Font = Canvas.Font
     , path = require('path');
@@ -81,3 +81,4 @@ exports.help = {
   description: "Bakiyenizi gösterir.",
   usage: "cüzdan <@kullanıcı>"
 };
+
