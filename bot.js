@@ -6,8 +6,11 @@ const moment = require("moment");
 const ayarlar=require("./ayarlar.json")
 const express = require("express");
 /////
+client.on("ready", () => {
+  console.log(`Bot suan bu isimle aktif: ${client.user.tag}!`);
+});
 
-
+///
 
 const app = express()
 app.get('/', (req, res) => res.send("Bot Aktif"))
@@ -223,7 +226,24 @@ client.on("message", async msg => {
  
     });
 
-
+///
+client.k4h1n = {
+  parabirimi: "TL", //Para Birimi TL İsterseniz Dolar Euro Vb. Para Birimleri Girebilirsiniz.
+  prefix: "!",
+  botunuzunidsi: "782983274830102528",
+  botismi: "V12 Ekonomi Botu",
+  renk: "BLUE", 
+  isimsiz: "Bilinmiyor", 
+  rastgelepara: true, 
+  minpara: 10, 
+  maxpara: 200, 
+  günlükpara: 50, 
+  dbloy: false, 
+  dblkey: "KEY", 
+  dblmsj: "Bu komutu kullanabilmek için bota oy vermelisiniz. Oy vermek için !oyver", 
+  başlangıçparası: 50, 
+  admin: ["725110280249540708"]
+}
 
 
 
