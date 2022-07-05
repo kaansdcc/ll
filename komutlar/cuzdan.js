@@ -2,6 +2,10 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 var ayarlar = require("../ayarlar.json");
+const Canvas = require('canvas')
+    , Image = Canvas.Image
+    , Font = Canvas.Font
+    , path = require('path');
 const request = require('node-superfetch');
 
 exports.run = async (client, message, args) => {
@@ -36,8 +40,13 @@ if(!member2) return message.channel.send("Bir Kullanıcı Etiketlermisin.")
             const canvas = createCanvas(1092, 678);
             const ctx = canvas.getContext("2d");
 
-          
-          
+            const background = await Canvas.loadImage(
+              "https://cdn.discordapp.com/attachments/611466015582322700/668155571492356117/woxecredit.png"
+            );
+            ctx.drawImage(background , 0 ,0 , canvas.width , canvas.height);
+            
+            const avatar = await Canvas.loadImage(message.author.displayAvatarURL)
+            ctx.drawImage(avatar , 500 , 200 , 250 , 250)
             
             ctx.font = '60px sans-serif';
             ctx.fillStyle = "BLACK";

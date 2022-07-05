@@ -6,7 +6,9 @@ const moment = require("moment");
 const ayarlar=require("./ayarlar.json")
 const express = require("express");
 /////
-
+client.on("ready", () => {
+  console.log(`Bot suan bu isimle aktif: ${client.user.tag}!`);
+});
 
 ///
 
@@ -73,6 +75,16 @@ client.aliases = new Discord.Collection();
 fs.readdir('./komutlar/', (err, files) => {
   if (err) console.error(err);
   log(`${files.length} adet komut yüklemeye hazırlanılıyor.`);
+  files.forEach(f => {
+    let props = require(`./komutlar/${f}`);
+    log(`Yüklenen komut ismi: ${props.help.name.toUpperCase()}.`);
+    client.commands.set(props.help.name, props);
+    props.conf.aliases.forEach(alias => {
+      client.aliases.set(alias, props.help.name);
+    });
+  });
+});
+
 
 client.reload = command => {
   return new Promise((resolve, reject) => {

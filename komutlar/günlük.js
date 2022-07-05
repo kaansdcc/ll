@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 const prefix = ayarlar.prefix
 const ms = require('ms')
 const db = require('quick.db')
-
+const DBL = require('dblapi.js')
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -46,8 +46,9 @@ exports.run = async (client, message, args) => {
         }
       } else {
         if(client.k4h1n.dbloy == true) {
-          
-        
+          const dbl = new DBL(client.k4h1n.dblkey, client)
+          dbl.hasVoted(message.author.id).then(voted => {
+            if(voted) {
               db.set(`günlükkullanımgodareçdare-${message.author.id}`, Date.now())
               if(client.k4h1n.rastgelepara == true) {
                 const randomizer = getRandomInt(client.k4h1n.minpara, client.k4h1n.maxpara)
@@ -85,6 +86,6 @@ exports.conf = {
 
 exports.help = {
     name: 'günlükpara',
-    description: 'murat',
-    usage: 'murat'
+    description: 'bedava para',
+    usage: 'günlükpara'
 }
