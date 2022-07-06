@@ -9,7 +9,8 @@ const kullanıcı = new Discord.MessageEmbed()
 .setAuthor("jarvis v12 sürümüyle yeniden sizlerle.")
 .setTitle(" Kullanıcı Komutları ")
  .setTimestamp()
-.setDescription(" **d+avatar** = Avatarınıza bakarsınız.  \n  **d+yetkilerim** = Yetkilerini görürsün.  \n  **d+profil** = Profilini görürsün.  \n  **d+sunucuresmi** = Sunucu resmini gösterir.  \n  **d+ping** = Botun Pingine Bakarsın.  \n **d+id** = Birisinin id'sine Bakarsın.  \n   \n **d+botbilgi** = Bot istatistiklerini görürsünüz.  \n  **d+bug-bildir** = Yazdığınız bug'u yapımcılarıma bildirir. ").setImage("https://cdn.discordapp.com/attachments/947400801553354752/954697612995481610/game-of-thrones-white-walker.gif")
+.setDescription(" **!avatar** = Avatarınıza bakarsınız.  \n  **!yetkilerim** = Yetkilerini görürsün.  \n  **!profil** = Profilini görürsün.  \n  **!sunucuresmi** = Sunucu resmini gösterir.  \n  **!ping** = Botun Pingine Bakarsın.  \n **!id** = Birisinin id'sine Bakarsın.  \n  **!botbilgi** = Bot istatistiklerini görürsünüz. \n **!bug-bildir** = Yazdığınız bug'u yapımcılarıma bildirir. ")
+.setImage("https://cdn.discordapp.com/attachments/947400801553354752/954697612995481610/game-of-thrones-white-walker.gif")
 message.channel.send(kullanıcı)
 }
 

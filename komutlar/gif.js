@@ -12,15 +12,15 @@ exports.run = async (client, message, args) => {
   .setDescription(`
 
 
-:white_small_square: | **d+uçak:** = Bot uçak gifi atar
-:white_small_square: | **d+animal:** = Bot hayvan gif atar.
-:white_small_square: | **d+anime:** = Bot anime  gif atar.
-:white_small_square: | **d+baby:** = Bot bebek gif atar.
-:white_small_square: | **d+türk:** = Bot türk gif atar.
-:white_small_square: | **d+alkış** = Bot alkış gifi atar 
-:white_small_square: | **d+inek** = Bot inek gifi atar
-:white_small_square: | **d+itfaiye** = Bot itfaiye gifi atar
-:white_small_square: | **d+kedi** = Bot kedi gifi atar
+:white_small_square: | **!uçak:** = Bot uçak gifi atar
+:white_small_square: | **!animal:** = Bot hayvan gif atar.
+:white_small_square: | **!anime:** = Bot anime  gif atar.
+:white_small_square: | **!baby:** = Bot bebek gif atar.
+:white_small_square: | **!türk:** = Bot türk gif atar.
+:white_small_square: | **!alkış** = Bot alkış gifi atar 
+:white_small_square: | **!inek** = Bot inek gifi atar
+:white_small_square: | **!itfaiye** = Bot itfaiye gifi atar
+:white_small_square: | **!kedi** = Bot kedi gifi atar
 `)
 
 
