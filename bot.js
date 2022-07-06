@@ -205,10 +205,6 @@ client.on("messageUpdate", msg => {
 client.on("message", async msg => {
 
 
-    
-
-
-
 
   const i = await db.fetch(`ssaass_${msg.guild.id}`);
     if (i == 'acik') {
