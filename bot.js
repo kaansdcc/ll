@@ -214,6 +214,17 @@ client.on("message", async msg => {
                     'Aleyküm Selam, Hoşgeldin')
           } catch(err) {
             console.log(err);
+
+ const i = await db.fetch(`ssaass_${msg.guild.id}`);
+    if (i == 'acik') {
+      if (msg.content.toLowerCase() == 'bb' || msg.content.toLowerCase() == 'b.b' || msg.content.toLowerCase() == 'görüşürüz' || msg.content.toLowerCase() == 'bye'|| msg.content.toLowerCase() == 'bye bye') {
+          try {
+ 
+                  return msg.reply(
+                    'Görüşürüz Yine Gel')
+          } catch(err) {
+            console.log(err);
+
           }
       }
     }
@@ -222,7 +233,7 @@ client.on("message", async msg => {
     }
     if (!i) return;
  
-    });
+    
 
 
 
