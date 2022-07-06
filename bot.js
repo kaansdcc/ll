@@ -58,7 +58,7 @@ client.on('message', msg => {
 client.on("ready", () => {
   console.log(`Bütün komutlar başarıyla yüklendi!`);
   client.user.setStatus("dnd");
-  client.user.setActivity('d+yardım |');
+  client.user.setActivity('d+yardım|𝒹𝒶𝓇𝓀 𝒹𝓇𝒶𝑔𝑜𝓃','d+sor bana soru sorabilirsin','Prefix:d+');
 })
 
 
