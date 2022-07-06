@@ -203,8 +203,13 @@ client.on("messageUpdate", msg => {
 
 
 client.on("message", async msg => {
- 
- 
+
+
+    
+
+
+
+
   const i = await db.fetch(`ssaass_${msg.guild.id}`);
     if (i == 'acik') {
       if (msg.content.toLowerCase() == 'sa' || msg.content.toLowerCase() == 's.a' || msg.content.toLowerCase() == 'selamun aleyküm' || msg.content.toLowerCase() == 'sea'|| msg.content.toLowerCase() == 'selam') {
@@ -213,7 +218,18 @@ client.on("message", async msg => {
                   return msg.reply(
                     'Aleyküm Selam, Hoşgeldin')
           } catch(err) {
-            console.log(err);};
+                      console.log(err);
+          }
+      }
+    }
+    else if (i == 'kapali') {
+   
+    }
+    if (!i) return;
+ 
+    });
+
+
 
 
 
