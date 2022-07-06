@@ -73,8 +73,8 @@ fs.readdir('./komutlar/', (err, files) => {
   if (err) console.error(err);
   log(`${files.length} adet komut yüklemeye hazırlanılıyor.`);
   files.forEach(f => {
-    let props = require(`./komutlar/${f}`);
-    log(`Yüklenen komut ismi: ${props.help.name.toUpperCase()}.`);
+ let props = require(`./komutlar/${f}`);
+ log(`Yüklenen komut ismi: ${props.help.name.toUpperCase()}.`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
