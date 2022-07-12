@@ -5,7 +5,13 @@ const db = require('quick.db')
 const moment = require("moment");
 const ayarlar=require("./ayarlar.json")
 const express = require("express");
-const Canvas = require('canvas')
+const chalk = require("chalk");
+var Jimp = require("jimp");
+const { Client, Util } = require("discord.js");
+const queue = new Map();
+
+
+
 /////
 
 
