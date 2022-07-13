@@ -47,7 +47,7 @@ exports.conf = {
   permLevel: 2
 };
 exports.help = {
-  name: 'uyarsil', 
+  name: 'uyarısil', 
   description: 'İstediğiniz kişiyi uyarır.',
   usage: 'uyarsil [kullanıcı] [sebep]' 
 };
