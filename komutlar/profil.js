@@ -25,16 +25,14 @@ exports.run = function (client, message, args) {
   let gold = db.fetch(`goldüye.${message.author.id}`)
   
   var Durum = message.author.presence.status;
-        var Durm = (Durum == "online" ? (0x00AE86) : (Durum == "offline" ? (0x808080) : (Durum == "idle" ? (0xFFFF00) : (Durum == "dnd" ? (0xFF0000) : (0x00AE86)))))
-        var durm = (Durum == "online" ? ("Çevrimiçi ") : (Durum == "offline" ? ("Çevrimdışı ") : (Durum == "idle" ? ("Boşta ") : (Durum == "dnd" ? ("Rahatsız Etmeyin ") : ("Bilinmiyor/bulunamadı.")))))
-  
+
   var üye = message.mentions.users.first();
   if (üye) {
     const embed = new Discord.MessageEmbed()
 .setAuthor(üye.username, üye.displayAvatarURL)
 .setColor('GREEN')
 .setThumbnail(üye.displayAvatarURL)
-.addField('Profil', `**Ad:** ${üye.username + '#' + üye.discriminator}\n**ID: ** ${üye.id}\n**Son Mesaj: ** ${üye.lastMessage}\n**Son Mesaj İD: ** ${üye.lastMessageID}\n**Oynadığı Oyun: ** ${üye.presence.game ? üye.presence.game.name : 'Şu an oyun oynamıyor'}\n**Durum** ${durm}\n**Oluşturulduğu Tarih: ** ${(`${moment(üye.createdAt).format('DD')} ${aylar[moment(üye.createdAt).format('MM')]} ${moment(üye.createdAt).format('YYYY HH:mm:ss')}`)}\n**Bot mu?** ${üye.bot ? ':white_check_mark:' : ':negative_squared_cross_mark:'}\n**Rolleri: ** ${message.guild.members.get(üye.id).roles.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}`)
+.addField('Profil', `**Ad:** ${üye.username + '#' + üye.discriminator}\n**ID: ** ${üye.id}\n**Son Mesaj: ** ${üye.lastMessage}\n**Son Mesaj İD: ** ${üye.lastMessageID}\n**Oynadığı Oyun: ** \n**Oluşturulduğu Tarih: ** ${(`${moment(üye.createdAt).format('DD')} ${aylar[moment(üye.createdAt).format('MM')]} ${moment(üye.createdAt).format('YYYY HH:mm:ss')}`)}\n**Bot mu?** ${üye.bot ? ':white_check_mark:' : ':negative_squared_cross_mark:'}\n**Rolleri: ** ${message.guild.members.get(üye.id).roles.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}`)
     .setTimestamp()
         .setFooter(`${client.user.tag} | ${prefix}yardım`)
 message.channel.send(embed)
