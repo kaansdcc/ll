@@ -11,8 +11,6 @@ const { Client, Util } = require("discord.js");
 const queue = new Map();
 
 
-
-
 /////
 
    
@@ -64,6 +62,9 @@ client.user.setActivity('!yardım|𝒹𝒶𝓇𝓀 𝒹𝓇𝒶𝑔𝑜𝓃','!s
 })
 
 
+const log = message => {
+  console.log(`[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message}`);
+};
 
 
 client.commands = new Discord.Collection();
