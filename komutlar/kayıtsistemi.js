@@ -22,6 +22,8 @@ exports.run = (client, message) => {
  **${prefix}erkek @kullanıcı isim yaş** \n-> Erkekleri kayıt etmeye yarar.
 **${prefix}kız @kullanıcı isim yaş** \n-> Kızları kayıt etmeye yarar.
 `)
+.setImage("https://cdn.discordapp.com/attachments/947400801553354752/954697612995481610/game-of-thrones-white-walker.gif")
+
  .setTimestamp()
  message.channel.send(AsreaperEmbed)
 }
