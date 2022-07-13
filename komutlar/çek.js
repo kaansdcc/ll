@@ -11,7 +11,7 @@ exports.run = async (client, message) => {
   if (permissions.has("SPEAK") === false) { return message.channel.send("Bu kanalda konuşma yetkim yok"); }
 
   message.member.voice.channel.join();
- 
+message.channel.send("**__Katıldım__**")
 }
 
 exports.conf = {
