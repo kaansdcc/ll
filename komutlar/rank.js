@@ -1,6 +1,6 @@
-
+const { createCanvas, loadImage} = require('canvas');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
- 
+const { path, join } = require("join") //Pasador Code 
 const xpfile = require("../msgData.json"); //Pasador Code
 module.exports.run = async (client, message, args) => {
   const level = xpfile[message.author.id].level
