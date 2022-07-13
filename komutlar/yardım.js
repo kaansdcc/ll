@@ -4,6 +4,7 @@ const db = require("quick.db");
 
 exports.run = async (client, message, args) => {
 
+
 const yardım = new Discord.MessageEmbed()
 .setColor("BLUE")
 .setAuthor("jarvis v12 sürümüyle sizlerle.")
@@ -15,7 +16,6 @@ const yardım = new Discord.MessageEmbed()
 message.channel.send(yardım)
 }
 
-exports.conf = {
   enabled: true, 
   guildOnly: false, 
    aliases: ["help","y"],
