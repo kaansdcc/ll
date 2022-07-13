@@ -42,6 +42,8 @@ const Asreaper = new Discord.MessageEmbed()
 **Son Mesaj: ** ${message.author.lastMessage}
 ║══════════════════════
 **Bot mu?** ${message.author.bot ? ':white_check_mark:' : ':negative_squared_cross_mark:'}
+║══════════════════════
+**Roller: ** ${message.guild.members.cache.get(message.author.id).roles.cache.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}
 `)
 
 return message.channel.send(Asreaper);

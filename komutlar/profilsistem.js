@@ -6,7 +6,7 @@ exports.run = (client, message) => {
 const AsreaperEMBED = new Discord.MessageEmbed()
 
 .setColor("GREEN")
-.setTitle(" **Asreaper**")
+.setTitle(" **DARK & ICE**")
 .setDescription(`
 
 ** Profil Sistemi | Komut Listesi**
@@ -19,7 +19,7 @@ const AsreaperEMBED = new Discord.MessageEmbed()
 **• !profil :**  Kişinin profilini gösterir.          
 **-------------------------------------------------**
 `)
-
+.setImage("https://cdn.discordapp.com/attachments/947400801553354752/954697612995481610/game-of-thrones-white-walker.gif")
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
