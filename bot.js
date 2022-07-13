@@ -10,7 +10,7 @@ var Jimp = require("jimp");
 const { Client, Util } = require("discord.js");
 const queue = new Map();
 
-
+/////
 
 
 
