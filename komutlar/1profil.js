@@ -1,9 +1,27 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 let config = require("../utils/errors.js");
+const moment = require('moment');
+require('moment-duration-format');
 
 exports.run = async (client, message, args) => {
+  
 
+  var aylar = {
+      "01": "Ocak",
+      "02": "Şubat",
+      "03": "Mart",
+      "04": "Nisan",
+      "05": "Mayıs",
+      "06": "Haziran",
+      "07": "Temmuz",
+      "08": "Ağustos",
+      "09": "Eylül",
+      "10": "Ekim",
+      "11": "Kasım",
+      "12": "Aralık"
+    }
+    var duration = moment.duration(client.uptime).format(" D [gün] H [saat] m [dakika] s [saniye]")
 
 
 
@@ -44,6 +62,8 @@ const Asreaper = new Discord.MessageEmbed()
 **Bot mu?** ${message.author.bot ? ':white_check_mark:' : ':negative_squared_cross_mark:'}
 ║══════════════════════
 **Roller: ** ${message.guild.members.cache.get(message.author.id).roles.cache.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}
+║══════════════════════
+**Oluşturulduğu Tarih: ** ${(`${moment(message.author.createdAt).format('DD')} ${aylar[moment(message.author.createdAt).format('MM')]} ${moment(message.author.createdAt).format('YYYY HH:mm:ss')}`)}
 `)
 
 return message.channel.send(Asreaper);
