@@ -12,8 +12,7 @@ const queue = new Map();
 
 /////
 
-
-
+   
 /////
 
 
@@ -42,11 +41,8 @@ client.on("message", message => {
     cmd.run(client, message, params, perms);
   }
 })
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'bb') {
-    msg.reply(' Hoşçakal Dostum ');
-  }
-});
+
+
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'kimse yokmu') {
@@ -54,11 +50,7 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'pc 12 yıllık') {
-    msg.reply(' benim yaşımda 0 ');
-  }
-});
+
 
 
 
