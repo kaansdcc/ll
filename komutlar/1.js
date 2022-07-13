@@ -71,7 +71,7 @@ exports.run = (client, message) => {
     .setImage("https://cdn.wallpapersafari.com/40/16/8rTMh6.jpg")
     .setAuthor(client.user.avatarURL())
     .setDescription(`${kasadancikanlar}`)
-    .setFooter(`Kasayı açan (${message.author.username}) | Kasa Fiyatı: 80$ | Kasadan çıkan bütün ürünler sizde kalmaz sadece eğlence için yapılmış bir komutdur`)
+    .setFooter(`Kasayı açan (${message.author.username}) |  Kasadan çıkan bütün ürünler sizde kalmaz sadece eğlence için yapılmış bir komutdur`)
     .setColor("BLACK")
     return message.channel.send(embed);
 };
