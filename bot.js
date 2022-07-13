@@ -24,7 +24,7 @@ app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env
 /////////////////
 //////////////////kaannındır
 client.on("ready", () => {
-client.channels.cache.get('988860721704083516').join();
+client.channels.cache.get('').join();
 });
 
 client.on("message", message => {
