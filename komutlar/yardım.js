@@ -23,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yardım',
+  name: 'yardım.',
   category: 'kullanıcı',
   description: 'Yardım Menüsü.',
    usage:'!yardım'
